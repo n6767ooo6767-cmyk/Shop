@@ -3,18 +3,35 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e; /* Темный фон для стиля */
+    color: white;
 }
-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #007bff;
+
+.container { text-align: center; }
+
+/* Анимация появления текста */
+.fade-in { animation: fadeIn 2s ease-in; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Анимация пульсации кнопки */
+.pulse-animation {
+    padding: 20px 40px;
+    font-size: 20px;
+    background-color: #e94560;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 50px;
     cursor: pointer;
+    animation: pulse 2s infinite;
 }
-button:hover {
-    background-color: #0056b3;
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
