@@ -1,4 +1,4 @@
 document.getElementById('payButton').addEventListener('click', function() {
-    // Временно поставим сюда ссылку на Google, чтобы проверить, что кнопка работает
-    window.location.href = "https://google.com"; 
+    // Ваша прямая ссылка на отправку платежа
+    window.location.href = "https://t.me/send?start=IV9oAlxDhMTt"; 
 });
